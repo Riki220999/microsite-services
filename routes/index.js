@@ -14,7 +14,7 @@ const path = require("path");
 var LocalStorage = require("node-localstorage").LocalStorage,
   localStorage = new LocalStorage("./scratch");
 
-let envBuild = process.env.ENV_BUILD || "UAT";
+let envBuild = process.env.ENV_BUILD || "PROD";
 console.log(envBuild);
 
 let environment = {
